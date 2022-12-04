@@ -1,0 +1,620 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+}
+
+header{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(63, 59, 59);
+}
+
+
+    /*ESTO ES LA PÁGINA PRINCIPAL*/
+
+.navbar{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+}    
+
+.navbar-logo{
+   width: 10%;
+   height: 100px;
+   float: left;
+   box-sizing: border-box;
+}
+
+.navbar-logo__img{
+    width: 130px;
+    height: 100px;
+    text-align: center;
+}
+
+.navbar-list{
+    width: 70%;
+    height: 60px;
+    float: left;
+    text-align: right;
+    padding-top: 40px;
+}
+
+.navbar-list__link{
+    color: aliceblue;
+    text-decoration: none;
+    padding-left: 20px;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.background-imagen{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/*ESTO ES LA PÁGINA CONCEPTO*/
+
+.backgroundConcept{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(255, 254, 254, 0.8), rgba(255, 254, 254, 0.8)), url('./images/fondo-palmeras1.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.backgroundConcept-centre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 41, 41);
+    width: 750px;
+    height: 650px;
+    color: aliceblue;
+}
+
+.backgroundConcept-centre__title{
+    text-transform: uppercase;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 40px;
+    font-weight: inherit;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+.backgroundConcept-centre__p1{
+    font-family: "Helvetica", Sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 20px 70px 2px 70px;
+}
+
+.backgroundConcept-centre__p2{
+    font-family: "Helvetica", Sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 20px 70px 2px 70px;
+}
+
+.backgroundConcept-centre__p3{
+    font-family: "Helvetica", Sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 20px 70px 40px 70px;
+}
+
+
+
+/*ESTO ES LA PÁGINA GALERIA*/
+
+.backgroundGalery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 80%;
+    background-color: rgb(7, 39, 7);
+    align-content: stretch;
+    padding: 35px 200px 35px 200px;
+}
+
+.backgroundGalery-image{
+    width: 300px;
+    order: 1;
+    background-color: rgb(7, 39, 7);
+    align-self: center;    
+    padding: 20px;
+}
+
+
+/*ESTO ES LA PÁGINA CARTA*/
+
+.title-menu{
+    display: flex;
+    justify-content: center;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: light;
+    letter-spacing: 8px;
+    margin: 60px
+}
+
+.navbar-list1{
+    display: flex;
+    justify-content: center;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: light;
+    letter-spacing: 8px;
+}
+
+.navbar-list1__link{
+    padding: 0 40px;
+    text-decoration: none;
+    color: black;
+}
+.navbar-list1__link:hover{
+    text-decoration: underline olive 3px;
+}
+
+/*Esto es el menú*/
+
+.menu{
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 7px;
+    font-weight: light;
+    letter-spacing: 1px;
+    padding: 40px 0px;
+}
+li{
+    padding: 5px 0;
+}
+
+    /*Menú izquierda*/
+
+.menu-left{
+    background-color:rgb(233, 241, 233);
+    width: 330px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 15px;
+    align-items: baseline;
+    grid-column-start: 1;
+    align-content: stretch;
+    justify-content: space-between;
+}
+.menu-left__items{
+    width: 200px;
+    height: 600px;
+    grid-column-start: 1;
+    padding: 30px;
+}
+.menu-left__value{
+    width: 100px;
+    grid-column-start: 2;
+}
+.menu-left__value__price{
+    padding: 15px 0;
+}
+.menu-left__items__title{
+    padding: 5px 0;
+}
+
+    /*Menú derecha*/
+
+.menu-right{
+    background-color:rgb(233, 241, 233);
+    width: 330px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 15px;
+    grid-column-start: 2;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.menu-right__items{
+    width: 200px;
+    height: 600px;
+    grid-column-start: 3;
+}
+.menu-right__value{
+    width: 100px;
+    grid-column-start: 4;
+}
+.menu-right__value__price{
+    padding: 13px 25px;;
+}
+.menu-right__items__title{
+    padding: 5px 0;
+}
+
+/*Esto es el botón de la carta*/
+
+.button-menu{
+    text-align: center;
+}
+
+.button-menu__breakfast{
+    background-color: rgb(184, 130, 60);
+    border: none;
+    color: aliceblue;
+    padding: 10px 15px;
+    margin: 20px 0 50px 0;
+    text-align: center;
+    font-size: 8px;
+    font-family: "Helvetica", Sans-serif;
+    font-weight: light;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/*ESTO ES LA PÁGINA DE RESERVA*/
+
+.booking{
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./images/fondo-palmeras1.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.booking-title{
+    display: flex;
+    justify-content: space-evenly;
+    color: aliceblue;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: light;
+    letter-spacing: 8px;
+    padding: 60px;
+}
+
+
+.booking-main{
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0px;
+    height: 700px;
+    
+}
+/*esto es el formulario*/
+.booking-form__book{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    align-items: stretch;
+    height: 400px;
+    width: 400px;
+    grid-column: 1;
+}
+
+.booking-form__book-people{
+    color: aliceblue;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 10px;
+    font-weight: light;
+    letter-spacing: 1px;
+}   
+.peopleNumber{
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0 10px 0;
+    border: 1px solid aliceblue;
+}
+
+.booking-form__book-time{
+    color: aliceblue;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 10px;
+    font-weight: light;
+    letter-spacing: 1px;
+}   
+.bookingTime{
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0 10px 0;
+    border: 1px solid aliceblue;
+    
+}
+
+.booking-form__book-table{
+    color: aliceblue;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 10px;
+    font-weight: light;
+    letter-spacing: 1px;
+}   
+.bookingTable{
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0 10px 0;
+    border: 1px solid aliceblue;
+    
+}
+/*estos son los botones*/
+.booking-form__book-submitButton{
+    
+}
+.submitButton{
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0 10px 0;
+    border: none;
+    background-color: white;
+}
+.booking-form__book-extraButtons{
+    color: aliceblue;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 10px;
+    font-weight: light;
+    letter-spacing: 1px;
+    padding: 30px 0;;
+}
+.waitingButton{
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+}
+.groupButton{
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0 10px 0;
+    border: none;
+    background-color: white;
+}
+/*esto es la dirección*/
+.booking-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: stretch;
+    height: 400px;
+    width: 400px;
+    grid-column: 2;
+}
+
+.booking-name__infoTitle{
+    color: rgb(184, 130, 60);
+    font-family: "Helvetica", Sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.booking-name__infoType{
+    color: rgb(255, 255, 255);
+    font-family: "Helvetica", Sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 4px;
+}
+.booking-name__infoAddress{
+    color: rgb(255, 255, 255);
+    font-family: "Helvetica", Sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding: 50px 0;
+}
+p{
+    padding: 2px;
+}
+
+/*ESTO ES LA PÁGINA DE BLOG*/
+
+.blog-title{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: light;
+    letter-spacing: 8px;
+    padding: 60px;
+}
+
+.blog-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: stretch;
+    padding: 0 110px;
+}
+.blog-photo{
+    width: 300px;  
+    padding: 10px;
+}
+
+.blog-button{
+    text-align: center;
+    padding: 30px;
+}
+.blog-button__post{
+    background-color: rgb(184, 130, 60);
+    border: none;
+    color: aliceblue;
+    padding: 10px 15px;
+    margin: 20px 0 50px 0;
+    text-align: center;
+    font-size: 8px;
+    font-family: "Helvetica", Sans-serif;
+    font-weight: light;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/*ESTO ES LA PÁGINA DE CONTACTO*/
+
+/*esto es el header*/
+
+.contact-header{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-header__logo{
+    padding-top: 150px;
+}
+
+.contact_header__text{
+    color: aliceblue;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: light;
+    letter-spacing: 8px;
+    padding: 70px;
+
+}
+
+.contact-header__info{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 50px;
+}
+.contact-header__info-text{
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    font-family: "Helvetica", Sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    text-align: center;
+}
+.contact-header__info-icon{
+    height: 30px;
+    width: 30px;
+}
+.contact-header__info-address{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+   
+}
+.contact-header__info-phone{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+   
+}
+.contact-header__info-email{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+   
+}
+
+/*esto es el main*/
+.contact-main{
+    
+}
+.contact-main__title{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: light;
+    letter-spacing: 8px;
+    padding: 60px;
+}
+
+.contact-main__buttons{
+    display: flex;
+    margin: 20px;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+.contact-main__button{
+    padding: 10px 30px;
+    margin: 10px 0 10px 0;
+    background-color: white;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: light;
+    letter-spacing: 4px;
+}
+
+/*esto es el footer*/
+.contact-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    background-color: rgb(243, 243, 243);
+    padding: 20px 50px 100px 50px;
+}
+
+.contact-footer__link{
+
+}
+.contact-footer__schedule{
+
+}
+.contact-footer__contact{
+
+}
+
+.contact-footer__title{
+    color: black;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: light;
+    letter-spacing: 2px;
+    padding: 50px 0 7px 0;
+}
+.contact-footer__text{
+    color: black;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding: 3px ;
+}
+.contact-footer__link{
+    color: black;
+    font-family: "Helvetica", Sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding: 3px ;
+}

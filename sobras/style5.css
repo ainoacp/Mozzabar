@@ -1,0 +1,67 @@
+.abuelo{
+    background-image: url(./images/fondo-palmeras2.jpeg);
+    width: 80%;
+    height: 80%;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.padre{
+    background-color: aliceblue;
+    width: 330px;
+    height: 650px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 5%;
+    grid-column-start: 1;
+    margin: 0 50px 0 280px;
+}
+
+.hijo1{
+    background-color: red;
+    width: 200px;
+    height: 600px;
+    grid-column-start: 1;
+
+}
+
+.hijo2{
+    background-color: blue;
+    width: 100px;
+    height: 600px;
+    grid-column-start: 2;
+   
+}
+
+.madre{
+    background-color: aliceblue;
+    width: 330px;
+    height: 650px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 5%;
+    grid-column-start: 2;
+    margin: 0 280px 0 50px;
+}
+
+.hijo3{
+    background-color: red;
+    width: 200px;
+    height: 600px;
+    grid-column-start: 3;
+
+}
+
+.hijo4{
+    background-color: blue;
+    width: 100px;
+    height: 600px;
+    grid-column-start: 4;
+   
+}
+

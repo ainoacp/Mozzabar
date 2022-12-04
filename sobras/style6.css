@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    min-height: 100vh;
+    align-content: flex-start;
+    background-color: yellow;    
+    align-content: space-between;
+    gap: 30px;
+}
+
+.box{
+    width: 300px;
+    /* height: 200px; */
+    background-color: red;
+    order:1;
+    align-self: stretch;    
+    padding: 20px;
+}
+
+.box__one{
+    order:2;
+    max-width: 1000px;
+    width: 1000px;
+}
