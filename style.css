@@ -12,40 +12,42 @@ header{
 
 
     /*ESTO ES LA PÁGINA PRINCIPAL*/
+.welcome{
+    width: 100%;
+    height: 1080px;
+}
 
 .navbar{
-    width: 80%;
+    width: 100%;
     height: 100px;
-    margin: auto;
+    display: flex;
+    justify-content: space-around;
 }    
 
 .navbar-logo{
-   width: 10%;
-   height: 100px;
-   float: left;
-   box-sizing: border-box;
+   width: 20%;
+   display: flex;
+   justify-content: center;
 }
 
 .navbar-logo__img{
-    width: 130px;
-    height: 100px;
-    text-align: center;
+    width: 120px;
+    height: 100%;
 }
 
 .navbar-list{
-    width: 70%;
-    height: 60px;
-    float: left;
-    text-align: right;
-    padding-top: 40px;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .navbar-list__link{
     color: aliceblue;
     text-decoration: none;
-    padding-left: 20px;
+    padding: 10px;
     font-family: "Helvetica", Sans-serif;
-    font-size: 22px;
+    font-size: 1rem;
     font-weight: lighter;
 }
 
@@ -60,95 +62,146 @@ header{
 
 /*ESTO ES LA PÁGINA CONCEPTO*/
 
-.backgroundConcept{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.concept{
+    width: 100%;
+    height: 1080px;;
+}
+
+.backgroundConcept-img{
     background-image: linear-gradient(rgb(255, 254, 254, 0.8), rgba(255, 254, 254, 0.8)), url('./images/fondo-palmeras1.jpeg');
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.backgroundConcept-centre{
+.concept-centre{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(48, 41, 41);
-    width: 750px;
-    height: 650px;
+    width: 500px;
+    height: 400px;
+    margin: 50px 0 50px 0; 
     color: aliceblue;
 }
 
-.backgroundConcept-centre__title{
+.concept-centre__title{
     text-transform: uppercase;
     font-family: "Helvetica", Sans-serif;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: inherit;
     letter-spacing: 8px;
     text-align: center;
+    position:relative;
 }
 
-.backgroundConcept-centre__p1{
+/*.concept-centre__title:before{
+    content: "";
+    display: block;
+    width: 120px;
+    height:2px;
+    background: aliceblue;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.concept-centre__title:after{
+    content: "";
+    display: block;
+    width: 120px;
+    height:2px;
+    background: aliceblue;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}*/
+
+.concept-centre__p{
     font-family: "Helvetica", Sans-serif;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: lighter;
-    padding: 20px 70px 2px 70px;
+    line-height: 16px;
+    text-align: justify;
+    padding: 20px 60px 0 60px;
 }
-
-.backgroundConcept-centre__p2{
-    font-family: "Helvetica", Sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    padding: 20px 70px 2px 70px;
-}
-
-.backgroundConcept-centre__p3{
-    font-family: "Helvetica", Sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-    padding: 20px 70px 40px 70px;
-}
-
 
 
 /*ESTO ES LA PÁGINA GALERIA*/
 
-.backgroundGalery{
+.gallery{
+    height: 1080px;
+    background-color: rgb(7, 39, 7);
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.gallery-collage{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    min-height: 80%;
-    background-color: rgb(7, 39, 7);
-    align-content: stretch;
-    padding: 35px 200px 35px 200px;
+    align-items: flex-start;
+    width: 40%;
 }
 
-.backgroundGalery-image{
-    width: 300px;
-    order: 1;
-    background-color: rgb(7, 39, 7);
-    align-self: center;    
-    padding: 20px;
+.gallery-img{
+    padding: 6px;
 }
 
 
 /*ESTO ES LA PÁGINA CARTA*/
+.carta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .title-menu{
-    display: flex;
-    justify-content: center;
     font-family: "Helvetica", Sans-serif;
     font-size: 24px;
     text-transform: uppercase;
     font-weight: light;
     letter-spacing: 8px;
-    margin: 60px
+    margin: 60px 0 30px 0;
+    position: relative;
 }
+
+.title-menu:before{
+    content: "";
+    display:block;
+    width: 300px;
+    height:2px;
+    background: #000;
+    position: absolute;
+    left: 9rem;
+    top: 50%;
+    z-index: -2;
+    }
+
+.title-menu:after{
+    content: "";
+    display:block;
+    width: 300px;
+    height:2px;
+    background: #000;
+    position: absolute;
+    right: 9rem;
+    top: 50%;
+    z-index: -2;
+    }
 
 .navbar-list1{
     display: flex;
@@ -161,7 +214,7 @@ header{
 }
 
 .navbar-list1__link{
-    padding: 0 40px;
+    padding: 20px 40px;
     text-decoration: none;
     color: black;
 }
@@ -172,9 +225,14 @@ header{
 /*Esto es el menú*/
 
 .menu{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    background-image: url(./images/fondo-palmeras2.jpeg);
+    width: 50%;
+    background-size: contain;
+    background-position: center;
     font-family: "Helvetica", Sans-serif;
     font-size: 7px;
     font-weight: light;
@@ -188,8 +246,8 @@ li{
     /*Menú izquierda*/
 
 .menu-left{
-    background-color:rgb(233, 241, 233);
-    width: 330px;
+    background-color: white;
+    width: 350px;
     height: 600px;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -219,8 +277,8 @@ li{
     /*Menú derecha*/
 
 .menu-right{
-    background-color:rgb(233, 241, 233);
-    width: 330px;
+    background-color: white;
+    width: 350px;
     height: 600px;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -276,11 +334,13 @@ li{
     background-position: center;
     width: 100%;
     height: 100%;
+    
 }
 
 .booking-title{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    position: relative;
     color: aliceblue;
     font-family: "Helvetica", Sans-serif;
     font-size: 10px;
@@ -290,13 +350,36 @@ li{
     padding: 60px;
 }
 
+.booking-title:before{
+    content: "";
+    display:block;
+    width: 300px;
+    height:2px;
+    background: rgb(184, 130, 60);
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    z-index: 0;
+    }
+
+.booking-title:after{
+    content: "";
+    display:block;
+    width: 300px;
+    height:2px;
+    background: rgb(184, 130, 60);
+    position: absolute;
+    right: 25%;
+    top: 50%;
+    z-index: 0;
+    }
 
 .booking-main{
     display: grid;
-    grid-template-columns: (2, 1fr);
+    grid-template-columns: 2fr, 1fr;
     justify-content: center;
+    align-items: start;
     gap: 30px;
-    padding: 40px 0px;
     height: 700px;
     
 }
@@ -307,8 +390,6 @@ li{
     justify-content: center;
     align-content: space-around;
     align-items: stretch;
-    height: 400px;
-    width: 400px;
     grid-column: 1;
 }
 
@@ -362,7 +443,7 @@ li{
 .submitButton{
     width: 100%;
     padding: 8px;
-    margin: 10px 0 10px 0;
+    margin: 35px 0 10px 0;
     border: none;
     background-color: white;
 }
@@ -395,8 +476,6 @@ li{
     justify-content: flex-start;
     align-content: space-around;
     align-items: stretch;
-    height: 400px;
-    width: 400px;
     grid-column: 2;
 }
 
@@ -419,7 +498,7 @@ li{
 .booking-name__infoAddress{
     color: rgb(255, 255, 255);
     font-family: "Helvetica", Sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: lighter;
     letter-spacing: 1px;
     padding: 50px 0;
@@ -440,18 +519,43 @@ p{
     font-weight: light;
     letter-spacing: 8px;
     padding: 60px;
+    position: relative;
 }
+
+.blog-title:before{
+    content: "";
+    display:block;
+    width: 300px;
+    height:2px;
+    background: rgb(184, 130, 60);
+    position: absolute;
+    left: 28%;
+    top: 50%;
+    z-index: 0;
+    }
+
+.blog-title:after{
+    content: "";
+    display:block;
+    width: 300px;
+    height:2px;
+    background: rgb(184, 130, 60);
+    position: absolute;
+    right: 28%;
+    top: 50%;
+    z-index: 0;
+    }
 
 .blog-main{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: stretch;
     padding: 0 110px;
 }
 .blog-photo{
-    width: 300px;  
-    padding: 10px;
+    width: 400px;  
+    padding: 15px;
 }
 
 .blog-button{
@@ -462,14 +566,15 @@ p{
     background-color: rgb(184, 130, 60);
     border: none;
     color: aliceblue;
-    padding: 10px 15px;
-    margin: 20px 0 50px 0;
+    padding: 16px 35px;
+    margin: 80px 0 50px 0;
     text-align: center;
-    font-size: 8px;
+    font-size: 16px;
     font-family: "Helvetica", Sans-serif;
     font-weight: light;
     letter-spacing: 2px;
     text-transform: uppercase;
+    border-radius: 2px;
 }
 
 /*ESTO ES LA PÁGINA DE CONTACTO*/
@@ -555,17 +660,42 @@ p{
     font-weight: light;
     letter-spacing: 8px;
     padding: 60px;
+    position: relative;
 }
+
+.contact-main__title:before{
+    content: "";
+    display:block;
+    width: 300px;
+    height:2px;
+    background: rgb(184, 130, 60);
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    z-index: 0;
+    }
+
+.contact-main__title:after{
+    content: "";
+    display:block;
+    width: 300px;
+    height:2px;
+    background: rgb(184, 130, 60);
+    position: absolute;
+    right: 25%;
+    top: 50%;
+    z-index: 0;
+    }
 
 .contact-main__buttons{
     display: flex;
     margin: 20px;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-bottom: 50px;
 }
 .contact-main__button{
     padding: 10px 30px;
-    margin: 10px 0 10px 0;
+    margin: 10px 50px;
     background-color: white;
     font-family: "Helvetica", Sans-serif;
     font-size: 10px;
